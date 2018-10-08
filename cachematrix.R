@@ -41,6 +41,9 @@ cacheSolve <- function(x, ...) {
 }
 
 ## Example for running:
+#  Load script 
+#  source("cacheMatrix.R")
+
 #  matrix<-makeCacheMatrix(matrix(c(4,2,7,6), 2, 2))
 
 #  >matrix$get()
@@ -56,8 +59,9 @@ cacheSolve <- function(x, ...) {
 #  [1,]  0.6 -0.7
 #  [2,] -0.2  0.4
 
-#  Second time it solves the matrix
-# getting inverse matrix
+#  Second time it solves the inverse matrix it obtains it from cache
+# >cacheSolve(matrix)
+# getting inverse matrix from cache
 # [,1] [,2]
 # [1,]  0.6 -0.7
 # [2,] -0.2  0.4
